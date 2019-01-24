@@ -1,12 +1,23 @@
 const express = require("express");
 const router = express.Router();
+const passport = require("../config/passport");
 const db = require("../models");
 
 router.get("/user", (req, res) => {
   res.send("hit user GET");
 });
 
-
+router.post("/usertest", (req, res) => {
+  const user = new db.User({
+    username: req.body.username,
+    // remove ability to become admin from route
+    isAdmin: req.body.isAdmin
+  });
+  db.User.register(user, req.body.password, (saveErr, savedUser) => {
+    if (saveErr) return console.log(saveErr);
+    console.log(savedUser);
+  })
+})
 router.post("/user", (req, res) => {
   db.User.findOne({ username: req.body.username }, (findErr, foundUser) => {
     if (findErr) {

@@ -1,6 +1,8 @@
 const express = require("express");
+const session = require("express-session");
 const path = require("path");
 const mongoose = require("mongoose");
+const passport = require("./config/passport");
 const db = require("./models");
 const viewRoutes = require("./routes/viewRoutes");
 const apiRoutes = require("./routes/api");
@@ -8,9 +10,6 @@ const app = express();
 
 var PORT = process.env.PORT || 8080;
 
-// to do:
-// auth set up
-// route set up
 
 if (process.env.MONGODB_URI) {
   mongoose.connect(process.env.MONGODB_URI, {
@@ -23,14 +22,20 @@ if (process.env.MONGODB_URI) {
 }
 
 app.use(express.static(path.join(__dirname, "public")));
-
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+// put the secret into .env file
+app.use(session({
+  secret: "keyboard cat",
+  resave: true,
+  saveUninitialized: true
+}));
+
+app.use(passport.initialize());
+app.use(passport.session());
+
 app.use("/api",apiRoutes)
-// app.get("/", (req, res) => {
-//   res.sendFile(path.join(__dirname + "/views/index.html"));
-// })
 app.use(viewRoutes);
 
 
