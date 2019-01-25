@@ -60,7 +60,13 @@ router.get("/test", (req,res) => {
   }
 })
 
-router.post("/order", (req, res) => {
+router.get("/orders/all", (req, res) => {
+  db.Order.find({}, (findErr, orders) => {
+    res.json({data: orders});
+  })
+})
+
+router.post("/orders", (req, res) => {
   let order = new db.Order({
     ...req.body
   });
