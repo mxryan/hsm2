@@ -17,6 +17,27 @@
         <li><a href="/index">Index</a></li>
     </ul>
   </div>
+  <div>
+    <h3>Sign Up</h3>
+    <form action="api/register" method="post">
+      <input type="text" name="username">
+      <input type="password" name="password">
+      <label for="isAdmin">isAdmin</label>
+      <input type="checkbox" name="isAdmin" id="isAdmin">
+      <input type="submit">
+
+    </form>
+    <h3>Sign In</h3>
+    <form action="api/login" method="post">
+      <input type="text" name="username">
+      <input type="password" name="password">
+      <input type="submit">
+    </form>
+    <form action="api/test">
+      <label for="test">Test</label>
+      <input type="submit" name="test">
+    </form>
+  </div>
 </body>
 
 </html>
