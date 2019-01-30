@@ -1,14 +1,25 @@
-body {
-  margin: 0;
+
+
+
+
+h4,
+h5,
+h3 {
+  color: red;
 }
 
-html, {
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth;
+
+header {
+  padding: 5px;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 900;
+  border: 2px solid red;
+
 }
+
 h2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-weight: 900;
   color: #86C232
 }
@@ -18,100 +29,47 @@ p {
   color: whitesmoke;
 }
 
-h3,
-h4,
-h5 {
-  color: white;
-}
-
-#pinContainer {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-.panel {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-}
-
-a:hover {
-  text-decoration: none;
-  color: #86C232;
-}
-
-.spacer {
-  height: 70px;
-}
-
-img {
-  width: 10%;
-}
-
-.row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-.column {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
-}
-
-
-.heading {
-
-  padding: 15px;
-  text-align: right;
-  font-family: 'Oswald', sans-serif;
-  font-weight: 900;
-  line-height: 15px;
-}
-
-
-.sticky {
-  font-size: 12px;
-  padding: 5px;
-  position: sticky;
-  bottom: 0;
-  left: 0;
-  margin-left: 5px;
-}
-
 .aboutMe {
+ border: 3px solid green;
   padding: 5px;
 }
 
 .skills {
+  display: inline-flex;
   align-items: center;
   display: flex;
   padding: 5px;
+  border: 2px solid black;
   justify-content: space-between;
-flex-wrap: nowrap;
+
 }
 
-.slideshow {
-  border: 2 px solid red;
+.technicalSkills {
+  float: left;
+  padding: 5px;
+  flex: 1;
+border: 3px solid blue;
+}
+
+.nontechnicalSkills {
+  float: right;
+  padding: 5px;
+  border: 2px solid coral
 }
 
 .experience {
-
+border: 2px solid yellow;
   padding: 5px;
 }
 
 
 .projects {
-
+border: 2px solid purple;
   padding: 5px;
 }
 
-
-.footer {
-  padding: 5px;
-  justify-content: end;
+footer {
+  padding: 10px;
   text-align: center;
+  padding-bottom: 10px;
 }
