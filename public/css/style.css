@@ -1,7 +1,75 @@
-h1 {
-  color: darkgoldenrod;
+
+
+
+
+h4,
+h5,
+h3 {
+  color: red;
 }
 
-img {
-  width: 40%;
+
+header {
+  padding: 5px;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 900;
+  border: 2px solid red;
+
+}
+
+h2 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 900;
+  color: #86C232
+}
+
+p {
+  font-family: 'Titillium Web', sans-serif;
+  color: whitesmoke;
+}
+
+.aboutMe {
+ border: 3px solid green;
+  padding: 5px;
+}
+
+.skills {
+  display: inline-flex;
+  align-items: center;
+  display: flex;
+  padding: 5px;
+  border: 2px solid black;
+  justify-content: space-between;
+
+}
+
+.technicalSkills {
+  float: left;
+  padding: 5px;
+  flex: 1;
+border: 3px solid blue;
+}
+
+.nontechnicalSkills {
+  float: right;
+  padding: 5px;
+  border: 2px solid coral
+}
+
+.experience {
+border: 2px solid yellow;
+  padding: 5px;
+}
+
+
+.projects {
+border: 2px solid purple;
+  padding: 5px;
+}
+
+footer {
+  padding: 10px;
+  text-align: center;
+  padding-bottom: 10px;
 }
