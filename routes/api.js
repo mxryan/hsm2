@@ -69,10 +69,6 @@ router.get("/orders", (req, res) => {
 
 router.post("/orders", (req, res) => {
   let order = new db.Order(req.body);
-  // <----- SHOULD BE THIS I THINK?
-  // let order = new db.Order({
-  //   ...req.body
-  // });
   order.save((saveErr, savedOrder) => {
     if (saveErr) {
       res.status(500).send({ error: saveErr });

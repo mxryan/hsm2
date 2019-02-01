@@ -1,7 +1,5 @@
-//TO DO:
-//-ADD EMAIL VALIDATION
-//-ADD ANY AUTH HOOKS
 const mongoose = require("mongoose");
+const mongooseTimestamp = require('mongoose-timestamp');
 
 const OrderSchema = new mongoose.Schema({
   name: {
@@ -30,7 +28,7 @@ const OrderSchema = new mongoose.Schema({
     default: false
   }
 })
-
+OrderSchema.plugin(mongooseTimestamp);
 const Order = mongoose.model("Order", OrderSchema);
 
 module.exports = Order;
