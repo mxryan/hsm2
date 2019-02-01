@@ -1,7 +1,89 @@
+body {
+  background-color: #720017;
+  font-family: 'Petit Formal Script', cursive; 
+  /* background: url("/Users/shafiqahsharif/Desktop/Bootcamp/shashabazaar/hsm2/public/images/48395127_1143805529117383_8227065093062393856_n.jpg") no-repeat; 
+  border-radius: 7px; */
+
+}
+
+
 h1 {
   color: darkgoldenrod;
+  font-family: "Petit Formal Script", cursive;
+}
+
+h4,
+h5,
+h3 {
+  color:#270101;
+  font-size: 28px;
+}
+
+header {
+  padding: 5px;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 900;
+  border: 2px solid #270101;
+  border-radius: 20px;
+
+}
+
+h2 {
+  font-family: 'Petit Formal Script', cursive;
+  font-weight: 900;
+  color: #d9ac2a;
+}
+
+p {
+  font-family: 'Titillium Web', sans-serif;
+  color: darkgoldenrod;
+  font-style: italic;
+}
+
+.aboutMe {
+ border: 3px solid #270101;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+
+
+footer {
+  padding: 10px;
+  text-align: center;
+  padding-bottom: 10px;
+
+  
+95  views/index.html
+@@ -1,21 +1,96 @@
 }
 
 img {
-  width: 40%;
+  width: 100%;
+  image-resolution: 3500 dpi;
+  border-radius: 20px;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+background: #3B5998;
+color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
 }
