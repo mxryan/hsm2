@@ -29,7 +29,7 @@
 
   </header>
 
-  <div class="background" src="/Users/shafiqahsharif/Desktop/Bootcamp/shashabazaar/hsm2/public/images/IMG_4992 2.jpg" alt="picture"></div>
+  <div class="background" src="/public/images/IMG_4992 2.jpg" alt="picture"></div>
     <br>
     <br>
     <!-- about us div -->
@@ -56,12 +56,12 @@
      24 Berry Box for $50.00<br/>
      24 Berry Box with 6 roses for $60.00
     </center></marquee><br/></h1>
-     <h2><marquee behavior="stroll" direction="up" scrollamount="3"><center></center>
-     <img src="/Users/shafiqahsharif/Desktop/Bootcamp/shashabazaar/hsm2/public/images/PhotoGrid_1547949060097_1547949139518_1547954459342.jpg">
-     <img src="/Users/shafiqahsharif/Desktop/Bootcamp/shashabazaar/hsm2/public/images/PhotoGrid_1547949578966_1547954459963.jpg">
-     <img src="/Users/shafiqahsharif/Desktop/Bootcamp/shashabazaar/hsm2/public/images/PhotoGrid_1547949593763_1547954459664.jpg">
-     <img src="/Users/shafiqahsharif/Desktop/Bootcamp/shashabazaar/hsm2/public/images/PhotoGrid_1547950223378_1547954458964.jpg">
-     <img src="/Users/shafiqahsharif/Desktop/Bootcamp/shashabazaar/hsm2/public/images/PhotoGrid_1547950588854_1547954458155.jpg">
+     <h2><marquee behavior="stroll" direction="up" scrollamount="5"></center>
+     <img src="/public/images/PhotoGrid_1547949060097_1547949139518_1547954459342.jpg">
+     <img src="/public/images/PhotoGrid_1547949578966_1547954459963.jpg">
+     <img src="/public/images/PhotoGrid_1547949593763_1547954459664.jpg">
+     <img src="/public/images/PhotoGrid_1547950223378_1547954458964.jpg">
+     <img src="/public/images/PhotoGrid_1547950588854_1547954458155.jpg">
     </center></br/>
     </marquee></h2> 
    <h1><marquee behavior="scroll" direction="up" scrollamount="1"><center>Super Bowl Special's<br/>
@@ -76,33 +76,186 @@
   <h4>Testimonials</h4>
   <!-- insert tesimonials below -->
   
-  <marquee behavior ="scroll" direction="up" scrollamount="7"><center>
-  <img src="/Users/shafiqahsharif/Desktop/Bootcamp/shashabazaar/hsm2/public/images/Image from iOS (5).jpg">
-  <p>Honey's Sweet Memories is such an amazing company! I have had many orders and each and everytime have received nothing short of not only tasty treats but great quality treats! The owner has excellent customer service and will go above and beyond to make sure you have exactly what you want. She genuinely cares about her customer and wants their event or special occasion to be perfect!!! I look forward to many more occasions celebrated with sweet treats from Honey's Sweet Memories!!</p>
+  <style>
+      * {box-sizing: border-box;}
+      body {font-family: Verdana, sans-serif;}
+      .mySlides {display: none;}
+      img {vertical-align: middle;}
+      
+      /* Slideshow container */
+      .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+      }
+      
+      /* Caption text */
+      .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+      }
+      
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+      
+      /* The dots/bullets/indicators */
+      .dot {
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      
+      .active {
+        background-color: #717171;
+      }
+      
+      /* Fading animation */
+      .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+      
+      @-webkit-keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+      }
+      
+      @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+      }
+      
+      /* On smaller screens, decrease text size */
+      @media only screen and (max-width: 300px) {
+        .text {font-size: 11px}
+      }
+      </style>
+      </head>
+      <body>
+      
+      <div class="slideshow-container">
+      
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 8</div>
+        <img src="/public/images/Image from iOS (5).jpg" style="width:100%">
+        <div class="text"><p>Honey's Sweet Memories is such an amazing company! I have had many orders and each and everytime have received nothing short of not only tasty treats but great quality treats! The owner has excellent customer service and will go above and beyond to make sure you have exactly what you want. She genuinely cares about her customer and wants their event or special occasion to be perfect!!! I look forward to many more occasions celebrated with sweet treats from Honey's Sweet Memories!!</p>
+        </div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 8</div>
+      <img src="/public/images/Image from iOS (7).jpg">
+      <img src="" style="width:100%"> 
+        <div class="text"><p>Always on time and taste is better than edible arrangements.</p></div>
+      </div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 8</div>
+        <img src="/public/images/Image from iOS (6).jpg" style="width:100%">
+        <div class="text"></div>
+      </div>
+
+      <div class="mySlides fade">
+          <div class="numbertext">4 / 8</div>
+          <img src="/public/images/Image from iOS (8).jpg" style="width:100%">
+          <div class="text"></div>
+     </div>
+
+     <div class="mySlides fade">
+        <div class="numbertext">5 / 8</div>
+        <img src="/public/images/Image from iOS (11).jpg" style="width:100%">
+        <div class="text"></div>
+      </div>
+
+     <div class="mySlides fade">
+        <div class="numbertext">6 / 8</div>
+        <img src="/public/images/Image from iOS (9).jpg" style="width:100%">
+      <div class="text"></div>
+      </div>
+      <div class="mySlides fade">
+          <div class="numbertext">7 / 8</div>
+          <img src="/public/images/Image from iOS (10).jpg" style="width:100%">
+          <div class="text"><div><p>Very creative, affordable and professional. Set upon time and I didn't have to worry about the clean up. I would definitely use them again.</p>
+      </div>
+      </div>
+        
+
+        <div class="mySlides fade">
+            <div class="numbertext">8 / 8</div>
+            <img src="/public/images/Image from iOS (11).jpg" style="width:100%">
+            <div class="text"><div>
+          </div> 
+      
+      </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+      </div>
+      
+      <script>
+      var slideIndex = 0;
+      showSlides();
+      
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+      </script>
+      
+      </body>
+      </html> 
+      
 
   
-  <img src="/Users/shafiqahsharif/Desktop/Bootcamp/shashabazaar/hsm2/public/images/IMG_4991.JPG">
-  <p>Always on time and taste is better than edible arrangements.</p>
-
   
-  <img src="/Users/shafiqahsharif/Desktop/Bootcamp/shashabazaar/hsm2/public/images/Image from iOS (7).jpg">
-  <img src="/Users/shafiqahsharif/Desktop/Bootcamp/shashabazaar/hsm2/public/images/Image from iOS (6).jpg">
-  <img src="/Users/shafiqahsharif/Desktop/Bootcamp/shashabazaar/hsm2/public/images/Image from iOS (8).jpg">
-  <img src="/Users/shafiqahsharif/Desktop/Bootcamp/shashabazaar/hsm2/public/images/Image from iOS (9).jpg">
-  <p>Very creative, affordable and professional. Set upon time and I didn't have to worry about the clean up. I would definitely use them again.</p>
-</center></marquee><br/>
     <!-- insert tesimonials above -->
 </div>
     </div>
 
-    <div>
+    <div class ="row">
+    <div class="col"></div>
+    </div>
         <h1>Index</h1>
         <ul>
           <li><a href="/admin">Admin</a></li>
           <li><a href="/login">Login</a></li>
           <li><a href="/">Index</a></li>
         </ul>
-        <img src="images/test.jpg" alt="">
+    <div class="col"></div>    
+    <img src="images/test.jpg" alt="">
       <h2>Contact</h2>
       <br>
     <div class="row">
