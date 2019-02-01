@@ -60,16 +60,19 @@ router.get("/test", (req,res) => {
   }
 })
 
-router.get("/orders/all", (req, res) => {
+router.get("/orders", (req, res) => {
+  // add support for specific queries
   db.Order.find({}, (findErr, orders) => {
     res.json({data: orders});
   })
 })
 
 router.post("/orders", (req, res) => {
-  let order = new db.Order({
-    ...req.body
-  });
+  let order = new db.Order(req.body);
+  // <----- SHOULD BE THIS I THINK?
+  // let order = new db.Order({
+  //   ...req.body
+  // });
   order.save((saveErr, savedOrder) => {
     if (saveErr) {
       res.status(500).send({ error: saveErr });
