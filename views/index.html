@@ -17,7 +17,7 @@
   <link href="https://fonts.googleapis.com/css?family=Petit+Formal+Script" rel="stylesheet">
 
   <title>HSM</title>
-
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <div class="container"></div>
@@ -38,10 +38,20 @@
 
 <div id="myDIV">
 
-<h2 class="animated fadeInRight delay-2s" style="font-weight:bold"><button onclick="myFunction()">About HSM</button><h2></button>
+<h2 class="animated fadeInRight delay-2s" style="font-weight:bold"><button onclick="myFunction()">About HSM</button></h2>
   <img id="bigpic" src="../public/images/FB_IMG_1549048730364_1549048856299.jpg" style="display:none; width: 1000px; height: 755px; padding: 17px; image-resolution: 5500dpi; border-radius: 288px;"/>
-  
+
 </div>
+</div>
+
+
+<div id="myDIV1">
+<h2 class="animated fadeInRight delay-2s" style="font-weight:bold"><button onclick="myFunction()">Menu</button>
+  <a href="../views/menu.html"></a>
+  </h2>
+</div>
+</div>
+
   
 
 <div class="aboutMe animated fadeInLeft delay-2s">
@@ -118,6 +128,8 @@
 
       img {
         vertical-align: middle;
+        height: 300px;
+        width: 300px;
       }
 
       /* Slideshow container */
@@ -130,12 +142,16 @@
       /* Caption text */
       .text {
         color: #d9ac2a;
-        font-size: 15px;
-        padding: 8px 12px;
-        position: absolute;
+        font-size: 17px;
+        font-weight: bold;
+        padding: 18px 14px;
+        position: relative;
+        top: 7px;
         bottom: 288px;
         width: 100%;
         text-align: center;
+        font-style: italic;
+        font-family: "Petit Formal";
       }
 
       /* Number text (1/3 etc) */
@@ -207,62 +223,61 @@
       <div class="slideshow-container">
 
         <div class="mySlides fade">
-          <div class="numbertext">1 / 8</div>
-          <img src="../public/images/Image_from_iOS_(5).jpg" style="width:100%">
+          <div class="numbertext">1 / 8</div><center>
+          <img src="../public/images/Image_from_iOS_(5).jpg" style="width:75%">
           <div class="text">
             Honey's Sweet Memories is such an amazing company! I have had many orders and each and everytime have
               received nothing short of not only tasty treats but great quality treats! The owner has excellent
               customer service and will go above and beyond to make sure you have exactly what you want. She genuinely
               cares about her customer and wants their event or special occasion to be perfect!!! I look forward to
               many more occasions celebrated with sweet treats from Honey's Sweet Memories!!
-          </div>
+          </div></center>
         </div>
 
         <div class="mySlides fade">
-          <div class="numbertext">2 / 8</div>
-          <img src="../public/images/Image from iOS (7).jpg" style="width:100%">
+          <div class="numbertext">2 / 8</div><center>
+          <img src="../public/images/Image from iOS (7).jpg" style="width: 75%">
           <div class="text">
             Always on time and taste is better than edible arrangements.
-          </div>
+          </div></center>
         </div>
 
         <div class="mySlides fade">
-          <div class="numbertext">3 / 8</div>
-          <img src="../public/images/Image from iOS (6).jpg" style="width:100%">
-          <div class="text"></div>
+          <div class="numbertext">3 / 8</div><center>
+          <img src="../public/images/Image from iOS (6).jpg" style="width: 75%">
+          <div class="text"></div></center>
         </div>
 
         <div class="mySlides fade">
-          <div class="numbertext">4 / 8</div>
-          <img src="../public/images/Image from iOS (8).jpg" style="width:100%">
-          <div class="text"></div>
+          <div class="numbertext">4 / 8</div><center>
+          <img src="../public/images/Image from iOS (8).jpg" style="width:75%">
+          <div class="text"></div></center>
         </div>
 
         <div class="mySlides fade">
-          <div class="numbertext">5 / 8</div>
+          <div class="numbertext">5 / 8</div><center>
           <img src="../public/images/Image from iOS (11).jpg" style="width:100%">
-          <div class="text"></div>
+          <div class="text"></div></center>
         </div>
 
         <div class="mySlides fade">
-          <div class="numbertext">6 / 8</div>
+          <div class="numbertext">6 / 8</div><center>
           <img src="../public/images/Image from iOS (9).jpg" style="width:100%">
-          <div class="text"></div>
+          <div class="text"></div></center>
         </div>
 
         <div class="mySlides fade">
-          <div class="numbertext">7 / 8</div>
+          <div class="numbertext">7 / 8</div><center>
           <img src="../public/images/Image from iOS (10).jpg" style="width:100%">
           <div class="text">
             Very creative, affordable and professional. Set upon time and I didn't have to worry  about the clean up. I would definitely use them again.
-        </div>
+        </div></center>
         </div>
 
         <div class="mySlides fade">
-          <div class="numbertext">8 / 8</div>
+          <div class="numbertext">8 / 8</div><center>
           <img src="../public/images/Image from iOS (11).jpg" style="width:100%">
-          <div class="text">
-        </div>
+          <div class="text"></div></center>
 
           </div>
           <br>
@@ -325,13 +340,13 @@
 </div>
 <h1>Index</h1>
 <ul>
-  <li><a href="/admin">Admin</a></li>
-  <li><a href="/login">Login</a></li>
-  <li><a href="/">Index</a></li>
+  <li><a href="../views/admin.html">Admin</a></li>
+  <li><a href="">Login</a></li>
+  <li><a href="../views/index.html">Index</a></li>
 </ul>
-<div class="col"></div>
-<img src="images/test.jpg" alt="">
-<h2>Contact</h2>
+<div class="col">
+<h1>Contact</h1>
+</div>
 <br>
 <div class="row">
   <div class="col">
@@ -339,18 +354,17 @@
   </div>
 
   <div class="col">
-    <a href="../public/videos/clip.mp4">Honey's Sweet Memories
-      
-  </div>
-  <div class="col">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <a href="https://www.facebook.com/honeyssweetmemories/" class="fa fa-facebook"></a>
   </div>
 
   <div class="col">
     <a href="https://www.instagram.com/honeyssweetmemories/" class="fa fa-instagram"></a>
-
   </div>
+  <div class="col">
+      <a href="../public/videos/clip.mp4">Honey's Sweet Memories
+        
+    </div>
 </div>
 </div>
 </div>
