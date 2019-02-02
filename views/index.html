@@ -19,13 +19,14 @@
   <title>HSM</title>
 
 </head>
+
 <div class="container"></div>
 
 <header class="animated fadeInRight delay-1s">
   <!-- title area -->
   <h2>Honey's Sweet Memories</h2>
   <!-- subtitle area -->
-  <h3 class="animated fadeInLeft delay-1s"> Catchphrase or logo area </h3>
+  <h3 class="animated fadeInLeft delay-1s">"Making Sweet Memories"</h3>
 
 </header>
 
@@ -33,8 +34,18 @@
 <br>
 <br>
 <!-- about us div -->
-<h2 class="animated fadeInRight delay-2s" style="font-weight:bold">About HSM</h2>
+
+
+<div id="myDIV">
+
+<h2 class="animated fadeInRight delay-2s" style="font-weight:bold"><button onclick="myFunction()">About HSM</button><h2></button>
+  <img id="bigpic" src="../public/images/FB_IMG_1549048730364_1549048856299.jpg" style="display:none; width: 1000px; height: 755px; padding: 17px; image-resolution: 5500dpi; border-radius: 288px;"/>
+  
+</div>
+  
+
 <div class="aboutMe animated fadeInLeft delay-2s">
+  </a>
 
   <p>Party planning has always been a passion of mine. I will always remember my mother setting up decorations and a
     nice table spread for every occasion. My mother and I planned out my entire wedding and we enjoyed every minute of
@@ -44,6 +55,7 @@
     created.. "Honey" was my mothers nickname given by all the grandchildren and it stuck and today, I have been able
     to create and make sweet memories for many!</p>
 </div>
+
 
 <!-- specials area -->
 
@@ -88,8 +100,7 @@
 
   </div>
 
-  <div class="col">
-    <h4>Testimonials</h4>
+  
     <!-- insert tesimonials below -->
 
     <style>
@@ -118,11 +129,11 @@
 
       /* Caption text */
       .text {
-        color: #f2f2f2;
+        color: #d9ac2a;
         font-size: 15px;
         padding: 8px 12px;
         position: absolute;
-        bottom: 8px;
+        bottom: 288px;
         width: 100%;
         text-align: center;
       }
@@ -189,6 +200,9 @@
     </head>
 
     <body>
+        <div class="col">
+            <h4>Testimonials</h4>
+      
 
       <div class="slideshow-container">
 
@@ -196,20 +210,19 @@
           <div class="numbertext">1 / 8</div>
           <img src="../public/images/Image_from_iOS_(5).jpg" style="width:100%">
           <div class="text">
-            <p>Honey's Sweet Memories is such an amazing company! I have had many orders and each and everytime have
+            Honey's Sweet Memories is such an amazing company! I have had many orders and each and everytime have
               received nothing short of not only tasty treats but great quality treats! The owner has excellent
               customer service and will go above and beyond to make sure you have exactly what you want. She genuinely
               cares about her customer and wants their event or special occasion to be perfect!!! I look forward to
-              many more occasions celebrated with sweet treats from Honey's Sweet Memories!!</p>
+              many more occasions celebrated with sweet treats from Honey's Sweet Memories!!
           </div>
         </div>
 
         <div class="mySlides fade">
           <div class="numbertext">2 / 8</div>
-          <img src="../public/images/Image from iOS (7).jpg">
-          <img src="" style="width:100%">
+          <img src="../public/images/Image from iOS (7).jpg" style="width:100%">
           <div class="text">
-            <p>Always on time and taste is better than edible arrangements.</p>
+            Always on time and taste is better than edible arrangements.
           </div>
         </div>
 
@@ -241,17 +254,15 @@
           <div class="numbertext">7 / 8</div>
           <img src="../public/images/Image from iOS (10).jpg" style="width:100%">
           <div class="text">
-            <p>Very creative, affordable and professional. Set upon time and I didn't have to worry  about the clean up. I would definitely use them again.</p>
-          </div>
+            Very creative, affordable and professional. Set upon time and I didn't have to worry  about the clean up. I would definitely use them again.
         </div>
-
+        </div>
 
         <div class="mySlides fade">
           <div class="numbertext">8 / 8</div>
-          <img src="/Image from iOS (11).jpg" style="width:100%">
+          <img src="../public/images/Image from iOS (11).jpg" style="width:100%">
           <div class="text">
-            <div>
-            </div>
+        </div>
 
           </div>
           <br>
@@ -284,6 +295,16 @@
               dots[slideIndex - 1].className += " active";
               setTimeout(showSlides, 2000); // Change image every 2 seconds
             }
+
+            function myFunction() {
+            var x = document.getElementById("bigpic","bigpic2");
+            if (x.style.display === "none") {
+            x.style.display = "block";
+            } else {
+            x.style.display = "none";
+      }
+}
+            
           </script>
 
     </body>
@@ -294,6 +315,8 @@
 
 
 <!-- insert tesimonials above -->
+</div>
+</div>
 </div>
 </div>
 
@@ -316,7 +339,8 @@
   </div>
 
   <div class="col">
-    <a href="honeyssweetmemories.com">Honey's Sweet Memories</a>
+    <a href="../public/videos/clip.mp4">Honey's Sweet Memories
+      
   </div>
   <div class="col">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
