@@ -3,12 +3,12 @@ const session = require("express-session");
 const path = require("path");
 const mongoose = require("mongoose");
 const passport = require("./config/passport");
-const db = require("./models");
+// const db = require("./models");
 const viewRoutes = require("./routes/viewRoutes");
 const apiRoutes = require("./routes/api");
 const app = express();
 
-var PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 8080;
 
 
 if (process.env.MONGODB_URI) {

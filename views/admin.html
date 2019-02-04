@@ -9,15 +9,22 @@
 </head>
 
 <body>
-  <div>
+  <div id="navbar">
     <h1>Admin</h1>
     <ul>
         <li><a href="/admin">Admin</a></li>
         <li><a href="/login">Login</a></li>
-        <li><a href="/index">Index</a></li>
+        <li><a href="/">Index</a></li>
     </ul>
   </div>
-  <div>
+  <div id="todo-list">
+    <h2>To Do:</h2>
+    <ul>
+      <li>Pull down all orders</li>
+      <li>Pull down unfllled orders only</li>
+    </ul>
+  </div>
+  <div id="sign-up-in">
     <h3>Sign Up</h3>
     <form action="api/register" method="post">
       <input type="text" name="username">
@@ -38,6 +45,17 @@
       <input type="submit" name="test">
     </form>
   </div>
+  <div id="orders-view">
+    <h3>Orders</h3>
+    <div id="orders-table">
+        
+    </div>
+    <button id="grab-all-orders-btn">Grab All Orders</button>
+  </div>
+
+  <script src=scripts/admin.js></script>
+
 </body>
+
 
 </html>
