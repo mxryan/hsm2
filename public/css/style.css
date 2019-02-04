@@ -1,9 +1,21 @@
 body {
   background-color: #720017;
   font-family: 'Petit Formal Script', cursive; 
+  padding: 20px;
   /* background: url("/Users/shafiqahsharif/Desktop/Bootcamp/shashabazaar/hsm2/public/images/48395127_1143805529117383_8227065093062393856_n.jpg") no-repeat; 
   border-radius: 7px; */
+}
 
+
+
+button {
+ background-color: #d9ac2a;
+ border-radius: 18px;
+ border-color: #720017;
+}
+
+button input {
+  background-color: #d9ac2a;
 }
 
 
@@ -11,11 +23,16 @@ h1 {
   color: darkgoldenrod;
   font-family: "Petit Formal Script", cursive;
 }
+text {
+  padding-bottom: 550px;
+}
+  
 
 h4,
 h5,
 h3 {
-  color:#270101;
+  font-family: "Petit Formal Script", cursive;
+  color:#763f02;
   font-size: 28px;
 }
 
@@ -37,7 +54,7 @@ h2 {
 
 p {
   font-family: 'Titillium Web', sans-serif;
-  color: darkgoldenrod;
+  color: #d9ac2a;
   font-style: italic;
 }
 
@@ -61,9 +78,13 @@ footer {
 
 img {
   width: 100%;
-  image-resolution: 3500 dpi;
+  image-resolution: 5500 dpi;
   border-radius: 20px;
+  height: 500px;
+  width: 500px;
 }
+
+
 
 .fa {
   padding: 20px;
