@@ -1,11 +1,8 @@
-// eventually: remove unnecessary fields on incoming data so that table can be made adaptive to incoming data's structure
-
 document.querySelector("#grab-all-orders-btn").addEventListener("click", () => {
   grabOrderDataAndThenDisplay();
 });
 
 function grabOrderDataAndThenDisplay() {
-  console.log("grabOrderAndDisplay Called");
   fetch("/api/orders")
     .then(res => res.json())
     .then(d => {
@@ -16,12 +13,9 @@ function grabOrderDataAndThenDisplay() {
 }
 
 function createTable(data) {
-  console.log("-------------------------------")
-  console.log("createTable called with argument");
-  console.log(data);
-  console.log("-------------------------------")
   // create a table element
   const table = document.createElement("table");
+  table.classList.add("table-main")
   // make header row
   let fields = ["complete", "createdAt", "updatedAt", "email", "name", "orders"]
   const headerRow = makeHeaderRow(fields);
@@ -31,17 +25,12 @@ function createTable(data) {
     let dataRow = makeDataRow(data[i], fields);
     table.appendChild(dataRow);
   }
-
   return table;
-
 }
 
 function makeHeaderRow(f) {
   const headerRow = document.createElement("tr");
-  console.log("-------------------------------")
-  console.log("makeHeaderRow called with arguments")
-  console.log(f);
-  console.log("-------------------------------");
+  headerRow.classList.add("header-row");
   f.map(x => {
     let head = document.createElement("th");
     head.classList.add("table-head");
@@ -53,48 +42,42 @@ function makeHeaderRow(f) {
 }
 
 function makeDataRow(obj, fields) {
-  console.log("-------------------------------")
-  console.log("make data row called with arguments:")
-  console.log(obj);
-  console.log(fields);
-  console.log("-------------------------------")
   // create a row for the data
   const row = document.createElement("tr");
+  row.classList.add("table-row")
   // for every key (except the last) in the obj:
   for (let j = 0; j < fields.length - 1; j++) {
     // make a td
     const td = document.createElement("td");
+    td.classList.add("table-data-cell")
     // set content of td to be obj[key]
     td.textContent = obj[fields[j]];
     // add the td to the row
     row.appendChild(td);
   }
-
   const subTableTd = _makeSubTableInTd(obj.orders, ["item", "quantity"]);
   row.appendChild(subTableTd);
   return row;
-
 }
 
 function _makeSubTableInTd(orders, fields) {
-  console.log("-------------------------------")
-  console.log("_makeSubTable called with arguments:");
-  console.log(orders, fields);
-  console.log("-------------------------------")
   // create the td for holding the sub-table
   const outTd = document.createElement("td");
   const table = document.createElement("table");
+  table.classList.add("sub-table")
   // fields = ["item", "quantity"]
   const headerRow = makeHeaderRow(fields);
+  headerRow.classList.add("sub-table-header-row")
   table.appendChild(headerRow);
   for (let i = 0; i < orders.length; i++) {
     let dataRow = document.createElement("tr");
+    dataRow.classList.add("sub-table-data-row")
     for (let j = 0; j < fields.length; j++) {
       let td = document.createElement("td");
+      td.classList.add("sub-table-td")
       td.textContent = orders[i][fields[j]];
       dataRow.appendChild(td);
     }
-
     table.appendChild(dataRow);
   }
   outTd.appendChild(table);
